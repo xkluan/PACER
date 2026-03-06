@@ -6,7 +6,6 @@ PACER is a hybrid framework that combines mechanistic Pharmacokinetic (PK) model
 
 ```
 PACER/
-├── data/                  # Data documentation and sample files
 ├── models/                # Pre-trained model weights
 │   ├── neural_ode_v3_model.pth      # Stage 1: Physics-Informed Neural ODE
 │   └── transformer_corrector.pth    # Stage 2: Residual Corrector
@@ -40,7 +39,7 @@ Due to data usage agreements, we cannot publish the raw dataset.
 **Instructions:**
 1. Download the VitalDB dataset (cases with TIVA and BIS monitoring).
 2. Preprocess the data into parquet format (see `src/data/loader.py` for expected schema).
-3. Place `clinical_data.csv` (demographics) in the `data/` directory.
+3. Place `clinical_data.csv` (demographics) in the root directory.
 
 ### 3. Running the Models
 
