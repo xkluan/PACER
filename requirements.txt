@@ -1,0 +1,16 @@
+# 核心应用框架 (Core Application Framework)
+streamlit==1.52.2  # Web应用界面框架
+
+# 深度学习与模型 (Deep Learning & Modeling)
+torch==1.12.1  # 深度学习框架 (PyTorch) - Removed +cu113 for HF Spaces compatibility
+torchdiffeq==0.2.5   # 神经微分方程求解器 (Neural ODE Solver)
+
+# 数据处理与科学计算 (Data Processing & Scientific Computing)
+numpy==1.26.4        # 基础数值计算
+pandas==2.3.3        # 数据分析与处理
+scipy==1.15.3        # 科学计算工具集
+
+# 可视化 (Visualization)
+matplotlib==3.10.8   # 绘图库
+
+# 生成于 2026-01-14，Python 3.10 环境
