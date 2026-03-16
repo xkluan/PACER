@@ -1,4 +1,4 @@
-#!/home/lxk/anaconda3/envs/ana/bin/python
+#!/usr/bin/env python
 import numpy as np
 
 def _per_patient_metrics(y_true, y_pred):

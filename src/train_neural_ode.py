@@ -1,4 +1,4 @@
-#!/home/lxk/anaconda3/envs/ana/bin/python
+#!/usr/bin/env python
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -15,8 +15,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from data.loader import TIVA_Dataset_V3
 
 # Configuration
-DATA_PATH = "/home/lxk/vitaldb/analysis/topic4_pk_neural_ode/data/processed/final_dataset_v3_physics.parquet"
-OUTPUT_DIR = "/home/lxk/vitaldb/analysis/topic4_pk_neural_ode/outputs/step3_2_neural_ode_v3"
+DATA_PATH = "./data/processed/final_dataset_v3_physics.parquet"
+OUTPUT_DIR = "./outputs/step3_2_neural_ode_v3"
 MODEL_PATH = os.path.join(OUTPUT_DIR, "neural_ode_v3_model.pth")
 BATCH_SIZE = 64
 SEQ_LEN = 60 # 5 minutes

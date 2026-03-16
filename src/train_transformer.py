@@ -13,9 +13,9 @@ from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 
 # Configuration
-OUTPUT_DIR = "/home/lxk/vitaldb/analysis/topic4_pk_neural_ode/outputs/residual_correction_transformer"
-DATA_PATH_TARGETS = "/home/lxk/vitaldb/analysis/topic4_pk_neural_ode/outputs/residual_correction/emergence_residual_dataset.parquet"
-DATA_PATH_FEATURES = "/home/lxk/vitaldb/analysis/topic4_pk_neural_ode/data/processed/final_dataset_v5.parquet"
+OUTPUT_DIR = "./outputs/residual_correction_transformer"
+DATA_PATH_TARGETS = "./outputs/residual_correction/emergence_residual_dataset.parquet"
+DATA_PATH_FEATURES = "./data/processed/final_dataset_v5.parquet"
 MODEL_SAVE_PATH = os.path.join(OUTPUT_DIR, "transformer_corrector.pth")
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

@@ -53,7 +53,7 @@ class TIVA_Dataset_V3(Dataset):
 
         # Check if age/weight are missing, merge if so
         if 'age' not in df.columns or 'weight' not in df.columns:
-            clinical_path = "/home/lxk/vitaldb/physionet.org/files/vitaldb/1.0.0/clinical_data.csv"
+            clinical_path = "./data/clinical_data.csv"
             if os.path.exists(clinical_path):
                 clinical = pd.read_csv(clinical_path)
                 clinical = clinical[['caseid', 'age', 'weight']].dropna()
